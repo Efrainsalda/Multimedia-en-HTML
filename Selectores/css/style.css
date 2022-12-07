@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+}
+
+.botón {
+    cursor: pointer;
+}
+
+.botón::before {
+    content: "Pasa por encima";
+    transition: .1s ease;
+}
+
+.botón:hover {
+    color: white;
+    background-color: green;
+}
+
+.botón::after {
+    content: "¡Hecho!";
+    transition: .1s ease;
+    opacity: 0;
+}
+
+.botón:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.botón:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
