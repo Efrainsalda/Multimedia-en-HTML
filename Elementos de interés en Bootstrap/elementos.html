@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-4">
+        <div class="bg-light p-5 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                <p class="col-md-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas necessitatibus libero, sequi porro aliquam id aut distinctio eius quasi magnam impedit. Eaque laudantium odit asperiores, veniam dolorem excepturi optio repudiandae.
+                </p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary">Llamada a la acción</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <h4>Ingresa tu información de contacto</h4>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" aria-describedby="tuNombre">
+            </div>
+            <div class="mb-3">
+                <label for="numeroTelefono" class="form-label">Numero de teléfono</label>
+                <input type="number" class="form-control" id="numeroTelefono">
+            </div>
+            <div class="mb-3">
+                <label for="comentarios">Deje su mensaje</label>
+                <textarea name="mensaje" id="comentarios" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container py-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Efrain Saldaña Mendoza</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Desarrollador web</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus doloribus dolores tempora odit, obcaecati illo sint quos fugit cumque officiis quidem modi iure asperiores laudantium aliquid veniam, deleniti voluptatibus?</p>
+            </div>
+            <div class="card-footer">
+                efrainsaldana596@gmail.com
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
